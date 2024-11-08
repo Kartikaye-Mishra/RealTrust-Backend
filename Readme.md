@@ -46,11 +46,13 @@ This project is a full-stack application that includes features such as project 
 
 .
 ├── src/
+
 │   ├── controllers/
 │   ├── middleware/
 │   ├── models/
 │   ├── routes/
 │   └── utils/
+
 ├── uploads/
 ├── server.js
 ├── .env
