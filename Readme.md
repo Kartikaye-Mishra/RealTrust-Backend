@@ -1,5 +1,4 @@
-# Project Name
-RealTrust
+# RealTrust
 
 This project is a full-stack application that includes features such as project management, client management, user contact forms, newsletter subscriptions, and image uploads with Cloudinary integration.
 
