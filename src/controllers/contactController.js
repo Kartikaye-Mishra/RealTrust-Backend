@@ -10,11 +10,12 @@ export const getContacts = async (req, res) => {
 
 export const addContact = async (req, res) => {
     try {
-        const { fullName, email, mobileNumber, city } = req.body;
-        const newContact = new Contact({ fullName, email, mobileNumber, city });
+        const { fullName, email, mobile, city } = req.body;
+        const newContact = new Contact({ fullName, email, mobile, city });
         await newContact.save();
         res.status(201).json(newContact);
     } catch (err) {
+        console.log("Error sending contacts", err);
         res.status(500).send('Server Error');
     }
 };

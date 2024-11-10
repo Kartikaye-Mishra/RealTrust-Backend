@@ -31,9 +31,10 @@ const PORT = process.env.PORT || 5000;
 
 // CORS configuration to allow only the frontend URL
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'https://realtrust-backend.onrender.com',
+  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
   optionsSuccessStatus: 200 // For legacy browser support
 };
+
 app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
